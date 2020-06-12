@@ -13,11 +13,28 @@ public class IndexController {
         return "hello fastjson!";
     }
 
-    @RequestMapping("/json")
+    @RequestMapping("/parseObject")
     @ResponseBody
-    protected String json(@RequestBody String json) {
-        Object object = JSON.parseObject(json);
-        return object.toString();
+    protected String parseObject(@RequestBody String json) {
+        try {
+            Object object = JSON.parseObject(json);
+            return object.toString();
+        } catch (Exception e) {
+            e.printStackTrace();
+            return e.toString();
+        }
+    }
+
+    @RequestMapping("/parse")
+    @ResponseBody
+    protected String parse(@RequestBody String json) {
+        try {
+            Object object = JSON.parse(json);
+            return object.toString();
+        } catch (Exception e) {
+            e.printStackTrace();
+            return e.toString();
+        }
     }
 
 }
