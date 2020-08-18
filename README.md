@@ -88,3 +88,5 @@ Content-Length: 159
 3. https://b1ue.cn/archives/382.html
 4. [浅谈下Fastjson的autotype绕过](https://www.kingkk.com/2020/06/%E6%B5%85%E8%B0%88%E4%B8%8BFastjson%E7%9A%84autotype%E7%BB%95%E8%BF%87/)
 5. https://forum.90sec.com/t/topic/1115
+
+移步 https://github.com/threedr3am/learnjavabug/blob/96f81b85bab45453d8c29465225b51f3900148f3/fastjson/src/main/java/com/threedr3am/bug/fastjson/file/FileWriteBypassAutoType1_2_68.java
